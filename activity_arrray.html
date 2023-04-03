@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Class Array</title>
+</head>
+<body>
+    <script>
+        // Soal 1 (Mengurutkan Array)
+        // mendeklarasikan variable array
+        let array2 = [5, 2, 4, 1, 3, 5];
+        // melakukan sort dari terkecil hingga terbesar
+        array2.sort();
+        // mencetak hasil soal 1
+        document.writeln("Soal 1 = " + array2 + "<br>");
+
+        // Soal 2 (Mengeluarkan Element Array)
+        // mendeklarasikan variable array
+        let array3 = ["Selamat", "Anda", "Melakukan", "Perulangan", "Array", "Dengan", "For"];
+        // mencetak string
+        document.writeln("Soal 2 = ");
+        // mencetak isi dari array satu per satu
+        for (let soal2 of array3){
+            document.writeln(soal2);
+        }
+        // mencetak spasi
+        document.writeln("<br>");
+
+        // Soal 3 (Mengeluarkan Element Array Dengan Kondisi)
+        // mencetak variable array
+        let array4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // mencetak string
+        document.writeln("Soal 3 = ");
+        // melakukan pengulangan
+        for (let soal3 of array4){
+            perbandingan = 0;
+            hitung = soal3 % 2;
+            if (hitung === perbandingan){
+                document.writeln(soal3);
+            }
+        }
+        // mencetak spasi
+        document.writeln("<br>");
+
+        // Soal 4 (Menggabungkan Element Menjadi String)
+        // mendeklarasikan variable array
+        let kalimat = ["Saya", "Sangat", "Senang", "Belajar", "JavaScript"];
+        // menggabungkan string dalam array
+        let text = kalimat.join(" ");
+        // mencetak hasil
+        document.writeln("Soal 4 = " + text + "<br>");
+
+        // Soal 5 (Menambahkan Element Array)
+        // mendeklarasikan variable array
+        var sayuran = [];
+        // melakukan push ke variable
+        sayuran.push("Kangkung", "Bayam", "Buncis", "Kubis", "Timun", "Sledri", "Tauge");
+        // menghapus koma
+        let text1 = sayuran.join(" ");
+        // mencetak hasil
+        document.writeln("Soal 5 = " + text1);
+    </script>
+</body>
+</html>
